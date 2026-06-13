@@ -11,7 +11,7 @@ This project is not complicated and does not require a high level of technical k
 
 I have tested this controler in depth and it works perfectly!
 
-Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/models/2291219-air-quality-monitor-esp32#profileId-2500035)
+Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/models/2927180-garmin-g1000-controller-ms-fs2024#profileId-3276433)
 
 ---
 ### 🛒 What components do I need to make this project?
