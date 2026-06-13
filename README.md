@@ -9,6 +9,8 @@ This repository contains the code and build instructions for my Garmin G1000 Con
 
 This project is not complicated and does not require a high level of technical know-how. You just need time, patience and to follow the instructions as set out below.
 
+I have tested this controler in depth and it works perfectly!
+
 Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/models/2291219-air-quality-monitor-esp32#profileId-2500035)
 
 ---
