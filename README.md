@@ -29,8 +29,8 @@ Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/model
 
 ***
 ### 💾 What software do I need to make this project?  
-- Arduino IDE
-- Mobiflight
+- Arduino IDE (free of cost)
+- Mobiflight (free of cost, consider donating for this great project!)
 
 ***
 ### 🔎 How do I get started?
