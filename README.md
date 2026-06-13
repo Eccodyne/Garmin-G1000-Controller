@@ -38,14 +38,14 @@ Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/model
 - Attach the tactile buttons to the button covers 
 - Install the joystick to the cover plate using M3 screws
 - Install the rotary encoders to the cover plate using M2.5 screws
-- Attach jumper wires to the tactiles buttons, 1x GND, 1X digital signal for each button (see images and instructions below). Connect the joystick and the rotary eoncoders with jumper wires in accordance with the instructions coming with for parts. You can also look up pin layouts via a Google search.
-- Attach the GND/VOLTAGE part of breadbord to one of the buttons covers (see image below)
+- Attach jumper wires to the tactiles buttons, 1x GND, 1X digital signal for each button (see images and instructions below). Connect the joystick and the rotary eoncoders with jumper wires in accordance with the instructions coming with for parts. You can also look up pin layouts via a Google search
+- Attach the GND/VOLTAGE part of breadbord to one of the buttons covers (see image below). You can use self-adhevise tape, my breadbord already had sel-adhesive tape applied to it
 - Connect all GND pins of the components to the GND/Voltage breadboard. For the tactile buttons, it does not matter which of the two pins you choose.
 - Connect all VOLT pins of the joystick and the rotary encoders to the GND/Voltage breadbord
 - Connect the VRX pin of the joystick to pin A0 of the Arduino 2560 MEGA board and the VRY pin to A1 of the Arduino 2560 MEGA Board
 - Connect a 3V and GND jumper wire between the GND/Voltage breadboard and the Arduino 2560 MEGA board 
 - Place heatshrink tubes between the pins of the tacticle buttons to avoid shorts / false signals
-- Important: Only the VRX and VRY pins of the joystick need to be connected to the A0 / A1 pins of the Arduino MEGA 2560. All other signal pins need to be attached to the digital pins of the Arduino 2560 MEGA.
+- Important: Only the VRX and VRY pins of the joystick need to be connected to the A0 / A1 pins of the Arduino MEGA 2560. All other signal pins need to be attached to the digital pins of the Arduino 2560 MEGA
 - Important: It does not matter to what digital pins you connect the jumper wires to, the Arduino sketch / code will tell you the pin numbers you need to write down (see instructions below)
 - Leave the housing open for now
 
