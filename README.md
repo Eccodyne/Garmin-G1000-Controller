@@ -70,7 +70,7 @@ You will need to identify to which digital ports you have connected the tactile 
 
 - Rotary encoders:
 
-  IMPORTANT: Make sure to buy 4 encoders as displayed on the right side. The right screw hole is closer to the pins, this is what you need to buy. Do NOZ buy the type of encoder shown on the left side!"
+  IMPORTANT: Make sure to buy 4 encoders as shown on the right side of the image. The screw hole to the right is closer to the pins, this is what you need to buy. Do NOT buy the type of encoder shown on the left side of the image!
 
   ![Breadboard](https://github.com/Eccodyne/Garmin-G1000-Controller/blob/main/images/Encoder.JPG)
 
