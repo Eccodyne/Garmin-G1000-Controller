@@ -31,12 +31,18 @@ Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/model
 ***
 ### 🔎 How do I get started?
 - Download *.3mf or *.stl files from the Air Quality Monitor Project on Makerworld: [Click](https://makerworld.com/de/models/2291219-air-quality-monitor-esp32#profileId-2500035)
-- Print the files with your 3D printer ("Front" and "Back" part)
-- Install the angled USB-C adapter to the ESP32-2432S028R in case you are not using an angled USB-C cable
-- Install the ESP32-2432S028R to the housing using the M3 screws. Do not use force.
-- Install the sensor to the housing using the M2 screws. Do not use force.
-- Connect the data cable to the ESP32-2432S028R and the sensor. You want to use the expansion port "IC2" which is located next to the card reader. This port provides for pin 22 (used for SCL signal) and pin 27 (used for SDA signal). See image below for details.
-- Important: Make sure that the SDA pin of the sensor is connected to the SDA pin of the ESP32-2432S028R. The same goes for the SCL pin. If wiring is not correct, you will get an error message on the display.
+- Print the files with your 3D printer. The buttons must be printed with a 0.2mm nozzle, a 0.4mm nozzle will not work! 
+- Install the Arduino 2560 MEGA board to the housing using the M2.5 screws. Do not use force.
+- Install the tactile buttons to the button covers 
+- Install the joystick to the cover plate using M3 screws
+- Install the rotary encoders to the cover plate using M2.5 screws
+- Attach jumper wires to the tactiles buttons (see images and instructions below), the joystick and the rotary eoncoders
+- Attach the GND/VOLTAGE part of breadbord to one of the buttons covers (see image below)
+- Connect all GND pins of the components to the GND/Voltage breadboard
+- Connect all VOLT pins of the joystick and the rotary encoders to the GND/Voltage breadbord
+- Connect the VRX pin of the joystick to pin A0 of the Arduino 2560 MEGA board and the VRY pin to A1 of the Arduino 2560 MEGA Board
+- Connect a 3V and GND jumper wire between the GND/Voltage breadboard and the Arduino 2560 MEGA board 
+- Place heatshrink tubes between the pins of the tacticle buttons to avoid shorts / false signals
 - Leave the housing open for now
 
 
