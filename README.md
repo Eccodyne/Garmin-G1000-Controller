@@ -54,7 +54,7 @@ Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/model
 You will need to identify to which digital ports you have connected the tactile buttons and the rotary encoders to your Arduino 2560 MEGA board (VRX and VRY are connected to pins A0 and A1):
 - Attach the wired Garmin G1000 controller to your PC with a USB-B cable
 - Install and run the Arduino IDE
-- Run the "Portscanne.io" sketch/code provided in the files section for this Github project
+- Upload the "Portscanne.ino" sketch/code provided in the files section for this Github project to your Arduino 2560 MEGA board
 - Open EXCEL and create a new file or use pen and paper
 - Go back to Arduino IDE with the code running, open the log screen
 - Write down each pin number that is displayed for each tacticle button when pressed. Note both the name of the button and the pin number - you will need this for MobiFlight adjustments later. The rotary encoders will provide two PIN numbers, one for a left turn and another one for a right turn. Take note of these. Also, press the rotary encoders down and note the pin number of the relevantr rotary encoder buttons
