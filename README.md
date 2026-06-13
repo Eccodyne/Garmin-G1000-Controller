@@ -18,7 +18,7 @@ Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/model
 - 4x KY-040 360 degree rotary encoders (see important note/image below)
 - 1x KY-023 Joystick module
 - 18x tactile 2-pin buttons
-- Mini Breadboard, only the GND/VOLTAGE part (you can detach this from the other parts of the breadboard, see image below)
+- Mini Breadboard, but only the GND/VOLTAGE part (you can detach this from the other parts of the breadboard, see image below)
 - Jumper wires
 - 12x M2.5 screws to attach the Arduino 2560 MEGA board and the rotary encoders to the housing
 - 8x M3 screws to attach the top plate and the joystick to the housing
