@@ -46,7 +46,7 @@ Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/model
 - Connect the VRX pin of the joystick to pin A0 of the Arduino 2560 MEGA board and the VRY pin to A1 of the Arduino 2560 MEGA Board
 - Connect a 3V and GND jumper wire between the GND/Voltage breadboard and the Arduino 2560 MEGA board 
 - Place heatshrink tubes between the pins of the tacticle buttons to avoid shorts / false signals (see image below)
-- Important: Only the VRX and VRY pins of the joystick need to be connected to the A0 / A1 pins of the Arduino MEGA 2560. All other signal pins need to be attached to the digital pins of the Arduino 2560 MEGA
+- Important: Only the VRX and VRY pins of the joystick need to be connected to the analogue A0 / A1 pins of the Arduino MEGA 2560. All other signal pins need to be attached to the digital pins of the Arduino 2560 MEGA
 - Important: It does not matter to what digital pins you connect the jumper wires to, the Arduino sketch / code will tell you the pin numbers you need to write down (see instructions below)
 - Leave the housing open for now
 
