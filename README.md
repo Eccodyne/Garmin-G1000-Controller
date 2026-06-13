@@ -49,17 +49,19 @@ Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/model
 - Important: It does not matter to what digital pins you connect the jumper wires to, the Arduino sketch / code will tell you the pin numbers you need to write down (see instructions below)
 - Leave the housing open for now
 
-
 ***
-### 💡 Installing required Arduino libraries
-You will need to install the following libraries for this project to work:
-- TFT_eSPI Library
-- BME680 libraries for Bosch sensor
-- Adafruit BME680 Library
+### 💡 Identifying the ports on your Arduino 2560 MEGA board
+You will need to identify to which digital ports you have connected the tactile buttons and the rotary encoders to your Arduino 2560 MEGA board
+- Attach the wired Garmin G1000 controller to your PC with a USB-B cable
+- Install and run the Arduino IDE
+- Run the "Portscanne.io" sketch/code provided in the files section for this Github project
+- Open EXCEL and create a new file or use pen and paper
+- Go back to Arduino IDE with the code running, open the log screen
+- Write down each pin number that is displayed for each tacticle button when pressed. Note both the name of the button and the pin number - you will need this for MobiFlight adjustments later. The rotary encoders will provide two PIN numbers, one for a left turn and another one for a right turn. Take note of these. Also, press the rotary encoders down and note the pin number of the relevantr rotary encoder buttons
+- Important: If one of the buttons or one of the rotary encoders does not show a pin/signal, the wiring may be bad/loose, so check if the jumper wires are connected properly to the pins
+- Quit Arduino IDE
+- Start Mobiflight andl flash the board with the Mobiflight firmware
+- In Mobiflight, Import the" Garmin G1000 Controller.mfmc" and "Garmin G1000 Controller.mfproj" files provided for in the files section for this Github project
+- Open the configuration for the modules in Mobflight. You will need to change the pin settings for each tactile button and the rotary eoncoders in accorance with the notes you have taken above. If one of the your ports is blocked in Mobiflight, just move it to another unused pin  to make it available. This may take couple of minutes until you have set everything, but is easy to do. 
 
-***
-### 📄 Adjusting the code for this project
-- Open Arduino IDE
-- Create a new sketch (= new project)
-- Copy the code from this repository to the sketch
-- If you want the temperature to be displayed in Fahrenheit and not Celcius, change line 29 as follows:
+ 
