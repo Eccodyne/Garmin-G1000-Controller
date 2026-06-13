@@ -39,7 +39,7 @@ Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/model
 - Attach the tactile buttons to the button covers 
 - Install the joystick to the cover plate using M3 screws
 - Install the rotary encoders to the cover plate using M2.5 screws
-- Attach jumper wires to the tactiles buttons, 1x GND, 1X digital signal for each button (see images and instructions below). Connect the joystick and the rotary eoncoders with jumper wires in accordance with the instructions coming with for parts. You can also look up pin layouts via a Google search
+- Attach jumper wires to the tactiles buttons, 1x GND, 1X digital signal for each button (see images and instructions below). Connect the joystick and the rotary encoders with jumper wires in accordance with the instructions coming with for parts. You can also look up pin layouts via a Google search
 - Attach the GND/VOLTAGE part of breadbord to one of the buttons covers (see image below). You can use self-adhevise tape, my breadbord already had sel-adhesive tape applied to it
 - Connect one pin of the tactuke buttons to the GND ports breadboard and the other pin to a digital port of the Arduino 2560 MEGA. For the tactile buttons, it does not matter which of the two pins you choose for GND or the digital signal.
 - Connect all GND/VOLT pins of the joystick and the rotary encoders to the GND/Voltage breadbord, and the all other digital pins of the joystick to the Arduino 2560 MEGA
