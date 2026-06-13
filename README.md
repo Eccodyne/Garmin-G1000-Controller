@@ -98,5 +98,7 @@ You will only need the right part on this image:
 ![Breadboard](https://github.com/Eccodyne/Garmin-G1000-Controller/blob/main/images/Breadboard.JPG)
 
 - Shrinking tube to avoid shorts / false signals
-- :
+- 
+![Breadboard](https://github.com/Eccodyne/Garmin-G1000-Controller/blob/main/images/Shrinking Tubes
+.JPG)
 
