@@ -14,7 +14,7 @@ Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/model
 
 
 ---
-### 🧺 What components do I need to make this project?
+### 🛒 What components do I need to make this project?
 - 3D printed housing parts
 - ESP32 Display ESP32-2432S028R with USB-C port (CYD / Cheap Yellow Display with 2,8" display)
 - BME680 sensor (CJMCU-680 Environmental Sensor Modul or SEENGREAT BME680 Environmental Sensor Module)
@@ -27,7 +27,7 @@ Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/model
 - Arduino IDE
 
 ***
-### 💡How do I get started?
+### 🔎 How do I get started?
 - Download *.3mf or *.stl files from the Air Quality Monitor Project on Makerworld: [Click](https://makerworld.com/de/models/2291219-air-quality-monitor-esp32#profileId-2500035)
 - Print the files with your 3D printer ("Front" and "Back" part)
 - Install the angled USB-C adapter to the ESP32-2432S028R in case you are not using an angled USB-C cable
