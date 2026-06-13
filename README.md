@@ -51,7 +51,7 @@ Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/model
 
 ***
 ### 💡 Identifying the ports on your Arduino 2560 MEGA board
-You will need to identify to which digital ports you have connected the tactile buttons and the rotary encoders to your Arduino 2560 MEGA board
+You will need to identify to which digital ports you have connected the tactile buttons and the rotary encoders to your Arduino 2560 MEGA board (VRX and VRY are connected to pins A0 and A1):
 - Attach the wired Garmin G1000 controller to your PC with a USB-B cable
 - Install and run the Arduino IDE
 - Run the "Portscanne.io" sketch/code provided in the files section for this Github project
