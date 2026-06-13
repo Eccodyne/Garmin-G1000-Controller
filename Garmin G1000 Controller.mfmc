@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>Arduino 2560 M</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="AP" Pin="37" />
+  <Button Name="FD" Pin="4" />
+  <Button Name="HDG" Pin="31" />
+  <Button Name="ALT" Pin="25" />
+  <Button Name="NAV" Pin="39" />
+  <Button Name="VNV" Pin="46" />
+  <Button Name="APR" Pin="33" />
+  <Button Name="BC" Pin="29" />
+  <Button Name="VS" Pin="35" />
+  <Button Name="FLC" Pin="5" />
+  <Button Name="NOSE UP" Pin="23" />
+  <Button Name="NOSE DN" Pin="2" />
+  <Button Name="D" Pin="38" />
+  <Button Name="MENU" Pin="40" />
+  <Button Name="FPL" Pin="34" />
+  <Button Name="CLR" Pin="42" />
+  <Button Name="PROC" Pin="36" />
+  <Button Name="ENT" Pin="32" />
+  <Encoder Name="HDG Knob" PinLeft="50" PinRight="45" EncoderType="1" />
+  <Encoder Name="RANGE Knob" PinLeft="51" PinRight="53" EncoderType="1" />
+  <Encoder Name="ALT Knob" PinLeft="28" PinRight="26" EncoderType="1" />
+  <Encoder Name="FMS Knob" PinLeft="22" PinRight="41" EncoderType="1" />
+  <Button Name="Joystick Button" Pin="3" />
+  <Button Name="HDG Knob Button" Pin="43" />
+  <AnalogInput Name="Joystick VRX" Pin="55" Sensitivity="1" />
+  <AnalogInput Name="Joystick VRY" Pin="54" Sensitivity="1" />
+  <Button Name="RANGE KnobButton" Pin="49" />
+  <Button Name="FMS Knob Button" Pin="24" />
+  <Button Name="ALT Knob Button" Pin="30" />
+</Config>

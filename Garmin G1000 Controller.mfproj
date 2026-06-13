@@ -1,0 +1,1098 @@
+{
+  "Name": "Garmin G1000 Controller",
+  "ConfigFiles": [
+    {
+      "Label": "New file",
+      "FileName": null,
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "analog": {
+            "onChange": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "Joystick_VRX_Value",
+                "Number": 420.0,
+                "Text": "420",
+                "Expression": "@"
+              }
+            }
+          },
+          "Device": {
+            "Type": "AnalogInput",
+            "Name": "Joystick VRX"
+          },
+          "DeviceType": "AnalogInput",
+          "DeviceName": "Joystick VRX",
+          "GUID": "08728748-dac2-45ee-9153-884b1f7ee7fd",
+          "Active": true,
+          "Name": "Joystick VRX Readout",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "CHANGE => 420",
+          "Value": " "
+        },
+        {
+          "analog": {
+            "onChange": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "Joystick_VRY_Value",
+                "Number": 425.0,
+                "Text": "425",
+                "Expression": "@"
+              }
+            }
+          },
+          "Device": {
+            "Type": "AnalogInput",
+            "Name": "Joystick VRY"
+          },
+          "DeviceType": "AnalogInput",
+          "DeviceName": "Joystick VRY",
+          "GUID": "63b3c942-4a36-4f7d-8200-c2104850b8d5",
+          "Active": true,
+          "Name": "Joystick VRY Readout",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "CHANGE => 425",
+          "Value": " "
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "Joystick_VRX_Value",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "AnalogInputConfig": {
+            "onChange": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "@ (>B:AS1000_RANGE_MFD_X_SET)",
+              "PresetId": "0"
+            }
+          },
+          "DeviceType": "InputAction",
+          "DeviceName": null,
+          "GUID": "f10a5fea-99ce-4f00-b226-fee2f22f053e",
+          "Active": true,
+          "Name": "Joystick Left / Right",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Interpolation",
+                "Values": {
+                  "100": 30.0,
+                  "300": 0.0,
+                  "500": 0.0,
+                  "700": -30.0
+                },
+                "Count": 4,
+                "Max": 30.0,
+                "Min": -30.0,
+                "Active": true
+              }
+            ]
+          },
+          "RawValue": "420",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "Joystick_VRY_Value",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "AnalogInputConfig": {
+            "onChange": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "@ (>B:AS1000_RANGE_MFD_Y_SET)",
+              "PresetId": "0"
+            }
+          },
+          "DeviceType": "InputAction",
+          "DeviceName": null,
+          "GUID": "2f8fb963-91f6-42ac-a61c-3a6f4ccb8651",
+          "Active": true,
+          "Name": "Joystick Up / Down",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Interpolation",
+                "Values": {
+                  "100": -30.0,
+                  "300": 0.0,
+                  "500": 0.0,
+                  "700": 30.0
+                },
+                "Count": 4,
+                "Max": 30.0,
+                "Min": -30.0,
+                "Active": true
+              }
+            ]
+          },
+          "RawValue": "425",
+          "Value": "0"
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>B:AS1000_HEADING_PFD_Dec)",
+              "PresetId": "0d7c76e0-5210-4549-b552-204e6fa3e7df"
+            },
+            "onLeftFast": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:AUTOPILOT HEADING LOCK DIR:1, Degrees) 5 - dnor (>K:1:HEADING_BUG_SET) 1 (>B:AS1000_HEADING_PFD_Dec)",
+              "PresetId": "939b5d9c-0786-4e3e-8df0-209b334bcd13"
+            },
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>B:AS1000_HEADING_PFD_Inc)",
+              "PresetId": "5d9b67d5-56b9-4c3a-b2ef-ff042efd5ad8"
+            },
+            "onRightFast": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:AUTOPILOT HEADING LOCK DIR:1, Degrees) 5 + dnor (>K:1:HEADING_BUG_SET) 1 (>B:AS1000_HEADING_PFD_Inc)",
+              "PresetId": "0b6bfb70-c802-4810-b37a-7416430d3bc8"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "HDG Knob"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "HDG Knob",
+          "GUID": "3a8774c8-ba6d-4f52-aa7d-5dbd50aa7dc7",
+          "Active": true,
+          "Name": "HDG Knob",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "LEFT",
+          "Value": " "
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>B:AS1000_FMS_LOWER_MFD_Dec)",
+              "PresetId": "c9198ce0-3aa6-4a54-a646-d9489ebd2878"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>B:AS1000_FMS_LOWER_MFD_Inc)",
+              "PresetId": "a144a51b-d9ed-4421-8eb5-e8048e61f827"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "FMS Knob"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "FMS Knob",
+          "GUID": "10dbf2be-d0e8-4e2f-bf3d-dd52c7d64841",
+          "Active": true,
+          "Name": "FMS Knob (Lower)",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RANGE_KNOB_PRESSED",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "RawValue": "RIGHT_FAST",
+          "Value": " "
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>B:AS1000_FMS_UPPER_MFD_Dec)",
+              "PresetId": "0e1e89fe-18a6-4010-9f89-ddf36e4de3d7"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>B:AS1000_FMS_UPPER_MFD_Inc)",
+              "PresetId": "d02f496e-3b5a-427a-8300-cd21c97ffe6c"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "FMS Knob"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "FMS Knob",
+          "GUID": "1012c1a6-e86c-4860-bee6-9822a6d341f9",
+          "Active": true,
+          "Name": "FMS Knob (Upper)",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RANGE_KNOB_PRESSED",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "RawValue": "RIGHT",
+          "Value": " ",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_FMS_Upper_PUSH)",
+              "PresetId": "ae9a71a4-9199-47c0-8380-fbd6273a8140"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "FMS Knob Button"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "FMS Knob Button",
+          "GUID": "32290cac-132e-4752-a46f-ad84cf045f2e",
+          "Active": true,
+          "Name": "FMS Knob Button",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>B:AS1000_ALTITUDE_INNER_PFD_Dec) (A:AUTOPILOT ALTITUDE LOCK VAR, feet) 100 - (>K:AP_ALT_VAR_SET_ENGLISH) (>H:AP_KNOB_Up)",
+              "PresetId": "d03873bb-2f72-4d88-ba00-d338c5627c89"
+            },
+            "onLeftFast": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>B:AS1000_ALTITUDE_OUTER_PFD_Dec) (A:AUTOPILOT ALTITUDE LOCK VAR, feet) 1000 - (>K:AP_ALT_VAR_SET_ENGLISH) (>H:AP_KNOB_Up)",
+              "PresetId": "7f5c33b5-7347-4a93-b03a-04b9f49761aa"
+            },
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>B:AS1000_ALTITUDE_INNER_PFD_Inc) (A:AUTOPILOT ALTITUDE LOCK VAR, feet) 100 + (>K:AP_ALT_VAR_SET_ENGLISH) (>H:AP_KNOB_Up)",
+              "PresetId": "3f7f4649-3ab8-47a7-9e4f-46ebce300400"
+            },
+            "onRightFast": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>B:AS1000_ALTITUDE_OUTER_PFD_Inc) (A:AUTOPILOT ALTITUDE LOCK VAR, feet) 1000 + (>K:AP_ALT_VAR_SET_ENGLISH) (>H:AP_KNOB_Up)",
+              "PresetId": "6c3a4bf7-2c59-47c1-9e81-a38bd1f29916"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "ALT Knob"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ALT Knob",
+          "GUID": "988c6177-2f9e-4821-90d5-12bd1c87f582",
+          "Active": true,
+          "Name": "ALT Knob",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "LEFT",
+          "Value": " "
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>B:AS1000_RANGE_ZOOM_MFD_Inc)",
+              "PresetId": "6cc73bdc-6bf6-4b25-bc08-2b1d43060efe"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>B:AS1000_RANGE_ZOOM_MFD_Dec)",
+              "PresetId": "73f65bda-db89-4f38-a399-fb9dee360830"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "RANGE Knob"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "RANGE Knob",
+          "GUID": "3fa53daa-e470-48d5-8e11-48eb734858a4",
+          "Active": true,
+          "Name": "RANGE Knob",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "LEFT",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>B:AS3000_UPPER_1_RANGE_BUTTON_PUSH)",
+              "PresetId": "f78a6381-664d-442b-8a0a-e344608f033c"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "RANGE KnobButton"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "RANGE KnobButton",
+          "GUID": "551a2298-0d39-46c7-bfb0-12c8cadc69b3",
+          "Active": true,
+          "Name": "RANGE Knob Button",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:HEADING INDICATOR, degrees) (>K:HEADING_BUG_SET)",
+              "PresetId": "4742dfc2-5646-416f-9d1c-89dc9d1ed131"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "HDG Knob Button"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "HDG Knob Button",
+          "GUID": "835266de-6dc3-4402-ba10-cc94afe7442c",
+          "Active": true,
+          "Name": "HDG Knob Button",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_JOYSTICK_PUSH)",
+              "PresetId": "3768bd5c-ee69-4ca7-a3f0-582c48c895d8"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Joystick Button"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Joystick Button",
+          "GUID": "769a1aae-2cc6-42e5-b60b-294b6a7995f0",
+          "Active": true,
+          "Name": "Activate Map Cursor",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:AS1000_DIRECTTO_MFD_PUSH) ",
+              "PresetId": "02e07da3-b9d5-4224-afe8-ce646b4678bc"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "D"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "D",
+          "GUID": "1ce1b2ca-3edd-4674-ac50-654e5879123e",
+          "Active": true,
+          "Name": "Direct (D) Button",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:AS1000_MENU_PUSH_MFD_PUSH)",
+              "PresetId": "59759a87-3b2b-4380-8481-bdf83d56d196"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MENU"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "MENU",
+          "GUID": "70cc2cb5-0368-43ba-a8a4-a85ef58957b1",
+          "Active": true,
+          "Name": "Menu Button",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:AS1000_FPL_PUSH_MFD_PUSH)",
+              "PresetId": "907761d1-2789-4b4d-999a-794d0da1844e"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "FPL"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "FPL",
+          "GUID": "cbb2357c-27b5-42f4-b95a-f12f66fcac34",
+          "Active": true,
+          "Name": "FPL Button",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:AS1000_PROC_PUSH_MFD_PUSH)",
+              "PresetId": "0552f93e-9252-49be-b4f4-429d43a47879"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "PROC"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "PROC",
+          "GUID": "d14c43bd-217b-4bf1-802c-444db89a29d4",
+          "Active": true,
+          "Name": "PROC Button",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:AS1000_CLR_MFD_PUSH)",
+              "PresetId": "56c20d5a-439f-4403-abbe-ff721f494a7b"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "CLR"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "CLR",
+          "GUID": "887596e6-513e-41ff-8f7f-68631484091c",
+          "Active": true,
+          "Name": "CLR Button",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:AS1000_ENT_PUSH_MFD_PUSH)",
+              "PresetId": "7c502237-ca70-44c9-ab79-8fa34b8d9bf5"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "ENT"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "ENT",
+          "GUID": "a48f9f9e-8cc2-483a-b438-157772403cdc",
+          "Active": true,
+          "Name": "ENT Button",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:AS1000_AUTOPILOT_AP_PFD_TOGGLE)",
+              "PresetId": "136436bd-5e9e-472e-a188-03f28818c158"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "AP"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "AP",
+          "GUID": "f0f8a265-7aa8-4732-b9da-17df63c27d10",
+          "Active": true,
+          "Name": "AP Button",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:AS1000_AUTOPILOT_FD_PFD_TOGGLE)",
+              "PresetId": "1fdfb8c8-2eed-4947-b59c-b88ed6e81010"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "FD"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "FD",
+          "GUID": "71c2ae4e-cd5a-4beb-b751-c52c9cde305c",
+          "Active": true,
+          "Name": "FD Button",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:AS1000_AUTOPILOT_HEADING_PFD_TOGGLE)",
+              "PresetId": "924377a3-643a-40f1-b9a4-f49a58df20a4"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "HDG"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "HDG",
+          "GUID": "ee36f822-ae13-427f-8617-2a941c826fdc",
+          "Active": true,
+          "Name": "HDG Button",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:AS1000_AUTOPILOT_ALTITUDE_PFD_TOGGLE)",
+              "PresetId": "142189dc-2861-490d-8f73-b6ab906dcb6b"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "ALT"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "ALT",
+          "GUID": "56cb365f-136e-4415-9189-7056a4e0f48e",
+          "Active": true,
+          "Name": "ALT Button",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:AS1000_AUTOPILOT_NAVIGATION_PFD_TOGGLE)",
+              "PresetId": "0ada5fc2-0e01-48ca-ab2b-388f5348822c"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "NAV"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "NAV",
+          "GUID": "2295cdb8-2630-47d7-bc91-b028f1ae432d",
+          "Active": true,
+          "Name": "NAV Button",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:AS1000_AUTOPILOT_VERTICAL_NAVIGATION_PFD_TOGGLE)",
+              "PresetId": "a4705f71-5195-41ed-a85f-a65d4969384f"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "VNV"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "VNV",
+          "GUID": "bda3a643-a84c-47bb-ad5e-fb2df6e25858",
+          "Active": true,
+          "Name": "VNV Button",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:AS1000_AUTOPILOT_APPROACH_PFD_TOGGLE)",
+              "PresetId": "b40d9705-e481-44a1-aaa5-a38e43196747"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "APR"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "APR",
+          "GUID": "9d1a4842-0f0f-4fd7-8588-51493dc930ee",
+          "Active": true,
+          "Name": "APR Button",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:AS1000_AUTOPILOT_BACKCOURSE_PFD_TOGGLE)",
+              "PresetId": "6f7140df-9d1a-406d-98c7-0d617f7f4278"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "BC"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BC",
+          "GUID": "8609f544-59e6-4edb-b14f-91fc736b6fa8",
+          "Active": true,
+          "Name": "BC Button",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:AS1000_AUTOPILOT_VERTICALSPEED_PFD_TOGGLE)",
+              "PresetId": "2380a844-caef-4a4e-9342-965715cad3e4"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "VS"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "VS",
+          "GUID": "f31b318d-45eb-45ff-96fb-2225e3e0c4a2",
+          "Active": true,
+          "Name": "VS Button",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:AS1000_AUTOPILOT_VERTICALSPEED_UP_PFD_PUSH) (A:AUTOPILOT VERTICAL HOLD, Bool) if{ (>K:AP_VS_VAR_INC) (>H:AP_DN) } (A:AUTOPILOT FLIGHT LEVEL CHANGE, Bool) if{ (>K:AP_SPD_VAR_DEC) } (A:AUTOPILOT PITCH HOLD, Bool) if{ (>K:AP_PITCH_REF_INC_UP) }",
+              "PresetId": "c4475664-1c04-4a1f-8b1d-e0b99d168b5d"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "NOSE UP"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "NOSE UP",
+          "GUID": "b8893aed-5b0c-43d0-b9c8-a1e36d6c439e",
+          "Active": true,
+          "Name": "NOSE UP Button",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:AS1000_AUTOPILOT_VERTICALSPEED_DOWN_PFD_PUSH) (A:AUTOPILOT VERTICAL HOLD, Bool) if{ (>K:AP_VS_VAR_DEC) (>H:AP_UP) } (A:AUTOPILOT FLIGHT LEVEL CHANGE, Bool) if{ (>K:AP_SPD_VAR_INC) } (A:AUTOPILOT PITCH HOLD, Bool) if{ (>K:AP_PITCH_REF_INC_DN) }",
+              "PresetId": "538fd136-68cc-462f-8021-89a7de5062d4"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "NOSE DN"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "NOSE DN",
+          "GUID": "9ef0e3b6-1d9b-4c42-82cc-44b220390a4e",
+          "Active": true,
+          "Name": "NOSE DN Button",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:AS1000_AUTOPILOT_FLIGHTLEVELCHANGE_PFD_TOGGLE)",
+              "PresetId": "3c3d643d-75d2-4963-980a-11be416603db"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "FLC"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "FLC",
+          "GUID": "faf34dae-8169-4da4-9cc5-99a5c094d478",
+          "Active": true,
+          "Name": "FLC Button",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "RANGE_KNOB_PRESSED",
+                "Number": 1.0,
+                "Text": "1",
+                "Expression": "1"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "RANGE_KNOB_PRESSED",
+                "Number": 0.0,
+                "Text": "0",
+                "Expression": "0"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "RANGE KnobButton"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "RANGE KnobButton",
+          "GUID": "ff076f23-4892-4519-af2d-c11526a103b0",
+          "Active": true,
+          "Name": "RANGE Knob Pressed",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Arduino 2560 M",
+            "Serial": "SN-49D-A33"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}
