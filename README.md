@@ -22,7 +22,7 @@ Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/model
 - Jumper wires
 - 12x M2.5 screws to attach the Arduino 2560 MEGA board and the rotary encoders to the housing
 - 8x M3 screws to attach the top plate and the joystick to the housing
-- USB-B cable to connect the controller to your PC
+- USB-B cable to connect the controller to your PC (this should come with the Arduino 2560 MEGA board, but you may want to purchase a longer cable)
 - 4x self-adhesive rubber feet to be attached to the bottom of the housing
 
 ***
