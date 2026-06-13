@@ -65,4 +65,12 @@ You will need to identify to which digital ports you have connected the tactile 
 - In Mobiflight, Import the" Garmin G1000 Controller.mfmc" and "Garmin G1000 Controller.mfproj" files provided for in the files section for this Github project
 - Open the configuration for the modules in Mobflight. You will need to change the pin settings for each tactile button and the rotary eoncoders in accorance with the notes you have taken above. If one of the your ports is blocked in Mobiflight, just move it to another unused pin  to make it available. This may take couple of minutes until you have set everything, but is easy to do. 
 
- 
+***
+### 🛠 Assembly images
+
+Tactile buttons:
+
+Atatch the tactile buttons to the button covers as follows:
+![Tacttile Buttons](https://github.com/Eccodyne/Garmin-G1000-Controller/blob/main/images/GarminG1000Controller.JPG)
+
+
