@@ -24,6 +24,7 @@ Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/model
 - 8x M3 screws to attach the top plate and the joystick to the housing
 - USB-B cable to connect the controller to your PC (this should come with the Arduino 2560 MEGA board, but you may want to purchase a longer cable)
 - 4x self-adhesive rubber feet to be attached to the bottom of the housing
+- Attach the knobs of the rotary encoders - there are notches in the printed knobs, so you need to make sure that these notches are aligned with the rotary encoders
 
 ***
 ### 💾 What software do I need to make this project?  
