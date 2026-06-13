@@ -68,18 +68,23 @@ You will need to identify to which digital ports you have connected the tactile 
 ***
 ### 🛠 Assembly images
 
-- Tactile buttons &pins:
+- Tactile buttons & pins:
 
 Atatch the tactile buttons to the button covers as follows. You can either solder the jumper cables to the pins, or remove the black plastic cover from a female pin, slide the connector over the pin and use a pliers to tighten the connector to the pin:
 
 Buttons:
+
 ![Tacttile Buttons](https://github.com/Eccodyne/Garmin-G1000-Controller/blob/main/images/Buttons1.JPG)
 ![Tacttile Buttons](https://github.com/Eccodyne/Garmin-G1000-Controller/blob/main/images/Buttons2.JPG)
 
 Pins:
+
 ![Tacttile Buttons](https://github.com/Eccodyne/Garmin-G1000-Controller/blob/main/images/Pin1.JPG)
 ![Tacttile Buttons](https://github.com/Eccodyne/Garmin-G1000-Controller/blob/main/images/Pin2.JPG)
 ![Tacttile Buttons](https://github.com/Eccodyne/Garmin-G1000-Controller/blob/main/images/Pin3.JPG)
 ![Tacttile Buttons](https://github.com/Eccodyne/Garmin-G1000-Controller/blob/main/images/Pin4.JPG)
 
+- Breadboard GND & VOLTAGE:
+
+You will only need the right part on this image:
 
