@@ -16,15 +16,20 @@ Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/model
 ---
 ### 🛒 What components do I need to make this project?
 - 3D printed housing parts
-- ESP32 Display ESP32-2432S028R with USB-C port (CYD / Cheap Yellow Display with 2,8" display)
-- BME680 sensor (CJMCU-680 Environmental Sensor Modul or SEENGREAT BME680 Environmental Sensor Module)
-- 2x M2 screws to attach the sensor to the housing
-- 4x M3 screws to attach the ESP32-2432S028R to the housing
-- USB-C cable with 90 degree angled connector or 90 degree angled USB-C connector/adapter
+- Arduino 2560 MEGA compatible board with USB-B port (not USB-C!)
+- 4x KY-040 360 degree rotary encoders (see important note/image below)
+- 1x KY-023 Joystick module
+- 18x tactile 2-pin buttons
+- Mini Breadboard, only the GND/VOLTAGE part (you can de-attach it from the other parts of the breadboard)
+- Jumper wires
+- 12x M2.5 screws to attach the Arduino 2560 MEGA board and the rotary encoders to the housing
+- 8x M3 screws to attach the top plate and the joystick to the housing
+- USB-B cable to connect the controller to your PC
 
 ***
 ### 💾 What software do I need to make this project?  
 - Arduino IDE
+- Mobiflight
 
 ***
 ### 🔎 How do I get started?
