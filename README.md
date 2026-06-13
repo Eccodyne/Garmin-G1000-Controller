@@ -70,7 +70,7 @@ You will need to identify to which digital ports you have connected the tactile 
 ***
 ### 💡 Control hints;
 
-- Push the joystick button to activate map panning
+- Push the joystick button to activate map panning, press again to de-activate
 - The faster you rotate the HDG and ALT knob, the higher the effect will be on the settings (ALT knob slow turn = 100 feet, ALT knob fast turn = 1,000 feet // faster turns on the HDG knob will cause higher changes).
 - Press the HDG knob button to align heading with actual heading of the plane
 - The FMS knob controls the LOWER FNS knob in the flight simulator. If you want to control the UPPER FMS knob, keep the RANGE knob button pressed and turn the FMS knob 
