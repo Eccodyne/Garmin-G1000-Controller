@@ -7,7 +7,7 @@ This a physical controller for the main navigation functions of the Garmin G1000
 ### 💡What is this repository for?
 This repository contains the code and build instructions for my Garmin G1000 Controller Project with the required 3D printing files to be found at Makerworld.com. You can build your own device to control the main navigation controls of the Garmin G1000 in Mircosoft Flight Simulator 2024 with just a few electronic parts, a 3D printed housing and a little bit of Arduino code.
 
-This project is not complicated, neither does it requires high level of technical know-how. You just need time, patience and to follow the instructions as set out below.
+This project is not complicated and does not require a high level of technical know-how. You just need time, patience and to follow the instructions as set out below.
 
 Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/models/2291219-air-quality-monitor-esp32#profileId-2500035)
 
