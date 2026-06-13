@@ -68,6 +68,14 @@ You will need to identify to which digital ports you have connected the tactile 
 ***
 ### 🛠 Assembly images
 
+- Rotary encoders:
+
+  IMPORTANT: Make sure to buy 4 encoders as displayed on the right side. The right screw hole is closer to the pins, this is what you need to buy. Do NOZ buy the type of encoder shown on the left side!"
+
+  
+
+  
+
 - Tactile buttons & pins:
 
 Atatch the tactile buttons to the button covers as follows. You can either solder the jumper cables to the pins, or remove the black plastic cover from a female pin, slide the connector over the pin and use a pliers to tighten the connector to the pin:
@@ -88,5 +96,5 @@ Pins:
 
 You will only need the right part on this image:
 
-![Breadboard](https://github.com/Eccodyne/Garmin-G1000-Controller/blob/main/images/Breadboard.JPG)
+![Breadboard](https://github.com/Eccodyne/Garmin-G1000-Controller/blob/main/images/Encoder.JPG)
 
