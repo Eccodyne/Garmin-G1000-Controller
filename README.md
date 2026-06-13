@@ -33,10 +33,10 @@ Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/model
 - Download *.3mf or *.stl files from the Garmin G1000 Controller Project on Makerworld: [Click](https://makerworld.com/de/models/2291219-air-quality-monitor-esp32#profileId-2500035)
 - Print the files with your 3D printer. The buttons MUST be printed with a 0.2mm nozzle, a 0.4mm nozzle will not work! 
 - Install the Arduino 2560 MEGA board to the housing using the M2.5 screws. Do not use force.
-- Install the tactile buttons to the button covers 
+- Attach the tactile buttons to the button covers 
 - Install the joystick to the cover plate using M3 screws
 - Install the rotary encoders to the cover plate using M2.5 screws
-- Attach jumper wires to the tactiles buttons, 1x GND, 1X digital signal for each button (see images and instructions below). Connect the joystick and the rotary eoncoders with jumper wires in accordance with the instructions coming with these parts
+- Attach jumper wires to the tactiles buttons, 1x GND, 1X digital signal for each button (see images and instructions below). Connect the joystick and the rotary eoncoders with jumper wires in accordance with the instructions coming with for parts. You can also look up pin layouts via a Google search.
 - Attach the GND/VOLTAGE part of breadbord to one of the buttons covers (see image below)
 - Connect all GND pins of the components to the GND/Voltage breadboard
 - Connect all VOLT pins of the joystick and the rotary encoders to the GND/Voltage breadbord
