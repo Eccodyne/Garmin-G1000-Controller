@@ -89,7 +89,7 @@ You will need to identify to which digital ports you have connected the tactile 
   
 - Tactile buttons & pins:
 
-Attach the tactile buttons to the button covers as follows. You can either solder the jumper cables to the pins, or remove the black plastic cover from a female pin, slide the connector over the pin and use a pliers to tighten the connector to the pin:
+Attach the tactile buttons to the button covers as shown in the image below. You can either solder the jumper cables to the pins, or remove the black plastic cover from a female pin, slide the connector over the pin and use a plier to tighten the connector to the pin:
 
 Buttons:
 
