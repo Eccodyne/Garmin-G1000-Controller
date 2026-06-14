@@ -38,8 +38,8 @@ Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/model
 - Print the files with your 3D printer. The buttons MUST be printed with a 0.2mm nozzle, a 0.4mm nozzle will not work! Use the printer settings in my 3mf files or apply them accordingly to your slicer should you not be using the BambuLab Studio slicer.
 - Install the Arduino 2560 MEGA board to the housing using the M2.5 screws. Do not use force.
 - Attach the tactile buttons to the button covers (see image below)
-- Install the joystick to the cover plate using M3 screws
-- Install the rotary encoders to the cover plate using M2.5 screws
+- Install the joystick to the top cover using M3 screws
+- Install the rotary encoders to the top cover using M2.5 screws
 - Attach jumper wires to the tactiles buttons, 1x GND, 1X digital signal for each button, what pin you choose for GND or VOLTAGE does not not matter (see images and instructions below).
 - Connect one pin of the tactile buttons to a GND port on the breadboard and the other pin to a digital port of the Arduino 2560 MEGA. As noted above, for the tactile buttons, it does not matter which of the two pins you choose for GND or the digital signal.
 - Connect the joystick and the rotary encoders with jumper wires in accordance with the instructions coming with for parts. You can also look up pin layouts via a Google search
