@@ -11,7 +11,7 @@ This project is not complicated and does not require a high level of technical k
 
 I have tested this controler in depth and it works perfectly!
 
-Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/models/2927180-garmin-g1000-controller-ms-fs2024#profileId-3276433)
+Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/models/2927499-garmin-g1000-controller-ms-flight-simulator-2024#profileId-3276793)
 
 ---
 ### 🛒 What components do I need to make this project?
@@ -35,7 +35,7 @@ Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/model
 
 ***
 ### 🔎 How do I get started?
-- Download *.3mf files for the Garmin G1000 Controller Project on Makerworld: [Click](https://makerworld.com/de/models/2291219-air-quality-monitor-esp32#profileId-2500035)
+- Download *.3mf files for the Garmin G1000 Controller Project on Makerworld: [Click](https://makerworld.com/de/models/2927499-garmin-g1000-controller-ms-flight-simulator-2024#profileId-3276793)
 - Print the files with your 3D printer. The buttons MUST be printed with a 0.2mm nozzle, a 0.4mm nozzle will not work! Use the printer settings in my 3mf files or apply them accordingly to your slicer should you not be using the BambuLab Studio slicer.
 - Install the Arduino 2560 MEGA board to the housing using the M2.5 screws. Do not use force.
 - Attach the tactile buttons to the button covers (see image below)
