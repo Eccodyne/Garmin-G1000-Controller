@@ -113,7 +113,7 @@ You will only need the right part on this image:
   
 ![Breadboard](https://github.com/Eccodyne/Garmin-G1000-Controller/blob/main/images/Tubes.JPG)
 
-- MobiFlight settings page where you need to adjust your pin settings for each device
+- MobiFlight settings page where you need to adjust your pin settings for each module (tactile buttons, rotary encoders, joystick)
   
 ![Breadboard](https://github.com/Eccodyne/Garmin-G1000-Controller/blob/main/images/MobiflightSettings.jpg)
 
