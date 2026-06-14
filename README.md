@@ -40,10 +40,11 @@ Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/model
 - Attach the tactile buttons to the button covers (see image below)
 - Install the joystick to the cover plate using M3 screws
 - Install the rotary encoders to the cover plate using M2.5 screws
-- Attach jumper wires to the tactiles buttons, 1x GND, 1X digital signal for each button (see images and instructions below). Connect the joystick and the rotary encoders with jumper wires in accordance with the instructions coming with for parts. You can also look up pin layouts via a Google search
-- Attach the GND/VOLTAGE breadboard part to one of the button covers (see image below). You can use self-adhevise tape, my breadbord already had self-adhesive tape applied to it
-- Connect one pin of the tactuke buttons to the GND ports breadboard and the other pin to a digital port of the Arduino 2560 MEGA. For the tactile buttons, it does not matter which of the two pins you choose for GND or the digital signal.
-- Connect all GND/VOLT pins of the joystick and the rotary encoders to the GND/Voltage breadbord, and the all other digital pins of the joystick to the Arduino 2560 MEGA
+- Attach jumper wires to the tactiles buttons, 1x GND, 1X digital signal for each button, what pin you choose for GND or VOLTAGE does not not matter (see images and instructions below).
+- Connect one pin of the tactile buttons to a GND port on the breadboard and the other pin to a digital port of the Arduino 2560 MEGA. As noted above, for the tactile buttons, it does not matter which of the two pins you choose for GND or the digital signal.
+- Connect the joystick and the rotary encoders with jumper wires in accordance with the instructions coming with for parts. You can also look up pin layouts via a Google search
+- Fix the GND/VOLTAGE breadboard on top of one of the button covers (see image below). You can use self-adhevise tape, my breadbord already had self-adhesive tape applied to it
+- Connect all GND/VOLT pins of the joystick and the rotary encoders to GND/Voltage pins of the breadbord, and all other digital pins of the joystick to the Arduino 2560 MEGA
 - Connect the VRX pin of the joystick to pin A0 of the Arduino 2560 MEGA board and the VRY pin to A1 of the Arduino 2560 MEGA Board
 - Connect a 3V and GND jumper wire between the GND/Voltage breadboard and the Arduino 2560 MEGA board 
 - Place heatshrink tubes between the pins of the tacticle buttons to avoid shorts / false signals (see image below)
