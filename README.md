@@ -23,7 +23,7 @@ Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/model
 - Mini Breadboard, but only the GND/VOLTAGE part is required (you can detach this part from the other parts of the breadboard, see image below)
 - Sufficient number of jumper wires
 - 12x M2.5 screws to attach the Arduino 2560 MEGA board and the rotary encoders to the housing
-- 8x M3 screws to attach the top cover and the joystick to the housing
+- 16x M3 screws to attach the top cover, the button covers and the joystick to the housing
 - USB-B cable to connect the controller to your PC (this should come with the Arduino 2560 MEGA board, but you may want to purchase a longer cable)
 - 4x self-adhesive rubber feet to be attached to the bottom of the housing
 
