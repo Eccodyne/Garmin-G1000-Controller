@@ -23,10 +23,9 @@ Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/model
 - Mini Breadboard, but only the GND/VOLTAGE part is required (you can detach this part from the other parts of the breadboard, see image below)
 - Sufficient number of jumper wires
 - 12x M2.5 screws to attach the Arduino 2560 MEGA board and the rotary encoders to the housing
-- 8x M3 screws to attach the top plate and the joystick to the housing
+- 8x M3 screws to attach the top cover and the joystick to the housing
 - USB-B cable to connect the controller to your PC (this should come with the Arduino 2560 MEGA board, but you may want to purchase a longer cable)
 - 4x self-adhesive rubber feet to be attached to the bottom of the housing
-- Attach the knobs of the rotary encoders - there are notches in the printed knobs, so you need to make sure that these notches are aligned with the rotary encoders
 
 ***
 ### 💾 What software do I need to make this project?  
@@ -65,7 +64,8 @@ You will need to identify to which digital ports you have connected the tactile 
 - Quit Arduino IDE
 - Start MobiFlight andl flash the board with the Mobiflight firmware
 - In MobiFlight, Import the" Garmin G1000 Controller.mfmc" and "Garmin G1000 Controller.mfproj" files provided for in the files section for this Github project
-- Open the configuration for the modules in MobiFlight. You will need to change the pin settings for each tactile button and the rotary eoncoders in accorance with the notes you have taken above. If one of the your ports is blocked in Mobiflight, just move it to another unused pin  to make it available. This may take couple of minutes until you have set everything, but is easy to do. 
+- Open the configuration for the modules in MobiFlight. You will need to change the pin settings for each tactile button and the rotary eoncoders in accorance with the notes you have taken above. If one of the your ports is blocked in Mobiflight, just move it to another unused pin  to make it available. This may take couple of minutes until you have set everything, but is easy to do.
+- Once all is correctly configured and working, attach the top cover to the housing and attach the knobs to the rotary encoders - there are notches in the printed knobs, so you need to make sure that these notches are aligned with the nothes of the rotary encoders
 
 ***
 ### 💡 Control hints:
