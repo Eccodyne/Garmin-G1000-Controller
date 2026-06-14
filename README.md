@@ -31,11 +31,11 @@ Link to 3D printing files on Makerworld: [Click](https://makerworld.com/de/model
 ***
 ### 💾 What software do I need to make this project?  
 - Arduino IDE (free of cost)
-- Mobiflight (free of cost, consider donating for this great project!)
+- MobiFlight (free of cost, consider donating for this great project!) [Link](https://mobiflight.com/)
 
 ***
 ### 🔎 How do I get started?
-- Download *.3mf files for the Garmin G1000 Controller Project on Makerworld: [Click](https://makerworld.com/de/models/2927499-garmin-g1000-controller-ms-flight-simulator-2024#profileId-3276793)
+- Download *.3mf files for the Garmin G1000 Controller Project on Makerworld: [Link](https://makerworld.com/de/models/2927499-garmin-g1000-controller-ms-flight-simulator-2024#profileId-3276793)
 - Print the files with your 3D printer. The buttons MUST be printed with a 0.2mm nozzle, a 0.4mm nozzle will not work! Use the printer settings in my 3mf files or apply them accordingly to your slicer should you not be using the BambuLab Studio slicer.
 - Install the Arduino 2560 MEGA board to the housing using the M2.5 screws. Do not use force.
 - Attach the tactile buttons to the button covers (see image below)
@@ -63,9 +63,9 @@ You will need to identify to which digital ports you have connected the tactile 
 - Write down each pin number that is displayed for each tacticle button when pressed. Note both the name of the button and the pin number - you will need this for MobiFlight adjustments later. The rotary encoders will provide two PIN numbers, one for a left turn and another one for a right turn. Take note of these. Also, press the rotary encoders down and note the pin number of the relevantr rotary encoder buttons
 - Important: If one of the buttons or one of the rotary encoders does not show a pin/signal, the wiring may be bad/loose, so check if the jumper wires are connected properly to the pins
 - Quit Arduino IDE
-- Start Mobiflight andl flash the board with the Mobiflight firmware
-- In Mobiflight, Import the" Garmin G1000 Controller.mfmc" and "Garmin G1000 Controller.mfproj" files provided for in the files section for this Github project
-- Open the configuration for the modules in Mobflight. You will need to change the pin settings for each tactile button and the rotary eoncoders in accorance with the notes you have taken above. If one of the your ports is blocked in Mobiflight, just move it to another unused pin  to make it available. This may take couple of minutes until you have set everything, but is easy to do. 
+- Start MobiFlight andl flash the board with the Mobiflight firmware
+- In MobiFlight, Import the" Garmin G1000 Controller.mfmc" and "Garmin G1000 Controller.mfproj" files provided for in the files section for this Github project
+- Open the configuration for the modules in MobiFlight. You will need to change the pin settings for each tactile button and the rotary eoncoders in accorance with the notes you have taken above. If one of the your ports is blocked in Mobiflight, just move it to another unused pin  to make it available. This may take couple of minutes until you have set everything, but is easy to do. 
 
 ***
 ### 💡 Control hints:
@@ -112,7 +112,7 @@ You will only need the right part on this image:
   
 ![Breadboard](https://github.com/Eccodyne/Garmin-G1000-Controller/blob/main/images/Tubes.JPG)
 
-- Mobiflight settings page where you need to adjust your pin settings for each device
+- MobiFlight settings page where you need to adjust your pin settings for each device
   
 ![Breadboard](https://github.com/Eccodyne/Garmin-G1000-Controller/blob/main/images/MobiflightSettings.jpg)
 
