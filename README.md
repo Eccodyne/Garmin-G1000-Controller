@@ -86,8 +86,7 @@ You will need to identify to which digital ports you have connected the tactile 
 
   ![Breadboard](https://github.com/Eccodyne/Garmin-G1000-Controller/blob/main/images/Encoder.JPG)
 
-  
-- Tactile buttons & pins:
+  - Tactile buttons & pins:
 
 Attach the tactile buttons to the button covers as shown in the image below. You can either solder the jumper cables to the pins, or remove the black plastic cover from a female pin, slide the connector over the pin and use a plier to tighten the connector to the pin:
 
@@ -112,6 +111,10 @@ You will only need the right part on this image:
 - Shrinking tubes to avoid shorts / false signals
   
 ![Breadboard](https://github.com/Eccodyne/Garmin-G1000-Controller/blob/main/images/Tubes.JPG)
+
+- Taking notes of pin connections
+  
+  ![Pins](https://github.com/Eccodyne/Garmin-G1000-Controller/blob/main/images/Pins.jpg)
 
 - MobiFlight settings page where you need to adjust your pin settings for each module (tactile buttons, rotary encoders, joystick)
   
