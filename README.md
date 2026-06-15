@@ -114,7 +114,7 @@ You will only need the right part on this image:
 
 - Taking notes of pin connections
   
-  ![Pins](https://github.com/Eccodyne/Garmin-G1000-Controller/blob/main/images/Pins.jpg)
+  ![Pins](https://github.com/Eccodyne/Garmin-G1000-Controller/blob/main/images/Pins.jpeg)
 
 - MobiFlight settings page where you need to adjust your pin settings for each module (tactile buttons, rotary encoders, joystick)
   
